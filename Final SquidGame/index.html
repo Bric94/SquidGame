@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Squid Game</title>
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>Squid Game<br>JEU DES BILLES</h1>
+
+        <div id="difficulty-selection">
+            <p>Choisissez votre difficulté :</p>
+            <button class="difficultyBtn" data-level="1">Facile (1 adversaire)</button>
+            <button class="difficultyBtn" data-level="2">Moyen (2 adversaires)</button>
+            <button class="difficultyBtn" data-level="3">Difficile (3 adversaires)</button>
+        </div>
+        <div id="hero-selection" style="display: none;">
+
+            <p>Choisis ton héro :</p>
+            <button class="heroBtn" data-hero="0">Seong Gi-hun (10 billes, bonus +1)</button>
+            <button class="heroBtn" data-hero="1">Kang Sae-byeok (15 billes, bonus +2)</button>
+            <button class="heroBtn" data-hero="2">Cho Sang-woo (25 billes, bonus +3)</button>
+        </div>
+
+
+
+
+        <div id="opponent-info" style="display: none;">
+            <table>
+                <tr>
+                    <th>Adversaire Actuel</th>
+                    <td id="current-opponent"></td>
+                </tr>
+                <tr>
+                    <th>Adversaires Restants</th>
+                    <td id="remaining-opponents"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="score-info" style="display: none;">
+            <table>
+                <tr>
+                    <th>Vos Billes</th>
+                    <td id="player-marbles"></td>
+                </tr>
+                <tr>
+                    <th>Billes Adversaire</th>
+                    <td id="opponent-marbles"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="game-controls" style="display: none;">
+            <p>PRÊT À METTRE TA VIE EN JEU ?</p>
+            <p>Ton adversaire a un nombre de billes :</p>
+            <button id="evenBtn">Paire</button>
+            <button id="oddBtn">Impaire</button>
+            <div id="bet-info"></div>
+        </div>
+
+        <div id="game-log"></div>
+        <button id="replayBtn" style="display: none;">Rejouer</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
